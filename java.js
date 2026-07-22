@@ -147,3 +147,57 @@ circle.remove();
 });
 
 });
+
+/*=============================
+Counter Animation
+==============================*/
+
+const counters=document.querySelectorAll(".counter");
+
+const speed=200;
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const counter=entry.target;
+
+const update=()=>{
+
+const target=+counter.getAttribute("data-target");
+
+const count=+counter.innerText;
+
+const inc=Math.ceil(target/speed);
+
+if(count<target){
+
+counter.innerText=count+inc;
+
+setTimeout(update,15);
+
+}else{
+
+counter.innerText=target.toLocaleString();
+
+}
+
+};
+
+update();
+
+observer.unobserve(counter);
+
+}
+
+});
+
+});
+
+counters.forEach(counter=>{
+
+observer.observe(counter);
+
+});
