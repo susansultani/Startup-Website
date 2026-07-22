@@ -57,8 +57,127 @@
 
     <!-- ===== LUXURY FOOTER ===== -->
 
-    <footer class="footer-pulse">
-      <div class="container">
+        <!-- body -->
+        
+
+   
+    
+
+    
+
+    <!-- hero -->
+     <section class="contact-hero">
+
+    <div class="hero-content">
+
+        <h1>Let's Build Something Amazing Together</h1>
+
+        <section class="hero">
+    <div class="heartbeat-container">
+
+        <svg class="heartbeat-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0 60
+                L180 60
+                L220 60
+                L245 20
+                L265 95
+                L290 10
+                L315 60
+                L420 60
+                L1200 60"
+                class="heartbeat-path"/>
+        </svg>
+
+        <p class="hero-subtitle">
+            Have questions, ideas, or partnership opportunities? We'd love to hear from you.
+        </p>
+
+    </div>
+</section>
+
+        <a href="#contactForm" class="btne">
+            Get in Touch
+        </a>
+
+    </div>
+
+</section>
+
+<section class="contact-info">
+
+<div class="card">
+
+<h3>Email</h3>
+
+<p>hello@startuppulse.com</p>
+
+</div>
+
+<div style="background-color: #c3f8f05c;" class="card">
+
+<h3>Phone</h3>
+
+<p>+1 234 567 890</p>
+
+</div>
+
+<div class="card">
+
+<h3>Office</h3>
+
+<p>Innovation Hub</p>
+
+
+</div>
+
+<div style="background-color: #c3f8f05c;" class="card">
+
+<h3>Hours</h3>
+
+<p>Mon - Fri</p>
+
+</div>
+
+</section>
+
+<section id="contactForm" class="contact-form-section">
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Company">
+
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Message"></textarea>
+
+<button class="btn btne">
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+<iframe class="my-5"
+  src="https://www.google.com/maps?q=Herat,Afghanistan&output=embed"
+  width="100%"
+  height="400"
+  style="border:0;"
+  loading="lazy">
+</iframe>
+
+
+<!-- ============================================================ -->
+<!-- ===== LUXURY FOOTER ===== -->
+<!-- ============================================================ -->
+<footer class="footer-pulse">
+    <div class="container">
         <div class="row g-5">
           <!-- Brand Column -->
           <div class="col-lg-4 col-md-6">
@@ -166,4 +285,47 @@
     <!-- ============================================================ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+</html>
+<!-- ============================================================ -->
+<!-- SCRIPTS -->
+<!-- ============================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    
+</script>
+<script>
+    const line = document.querySelector(".heartbeat-path");
+
+function heartbeat(){
+
+    line.animate([
+        {
+            strokeDashoffset:1800,
+            opacity:0
+        },
+        {
+            opacity:1,
+            offset:.05
+        },
+        {
+            strokeDashoffset:0,
+            opacity:1,
+            offset:.85
+        },
+        
+        {
+            opacity:0
+        },
+        
+    ],{
+        duration:2200,
+        easing:"linear"
+    });
+
+}
+
+heartbeat();
+
+setInterval(heartbeat,2200);
+</script>
+</body>
 </html>
