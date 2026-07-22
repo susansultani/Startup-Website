@@ -1511,3 +1511,76 @@ color:#14B8A6;
 margin-right:10px;
 
 }
+
+/*=========================
+CORE VALUES
+==========================*/
+
+.core-values{
+
+padding:120px 0;
+
+background:white;
+
+}
+
+
+.value-card{
+
+background:#F8FAFC;
+
+padding:40px 30px;
+
+border-radius:30px;
+
+text-align:center;
+
+height:100%;
+
+transition:.4s;
+
+border:1px solid transparent;
+
+}
+
+
+.value-card:hover{
+
+transform:translateY(-12px);
+
+background:white;
+
+border-color:#5EEAD4;
+
+box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+}
+
+
+.value-card i{
+
+font-size:45px;
+
+color:#14B8A6;
+
+margin-bottom:20px;
+
+}
+
+
+.value-card h4{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+
+.value-card p{
+
+line-height:1.8;
+
+color:#64748B;
+
+}
