@@ -201,3 +201,36 @@ counters.forEach(counter=>{
 observer.observe(counter);
 
 });
+
+
+/*==========================
+AI Card Animation
+==========================*/
+
+const aiCards=document.querySelectorAll(".ai-card");
+
+aiCards.forEach(card=>{
+
+card.addEventListener("mousemove",(e)=>{
+
+const rect=card.getBoundingClientRect();
+
+const x=e.clientX-rect.left;
+
+const y=e.clientY-rect.top;
+
+card.style.background=
+
+`radial-gradient(circle at ${x}px ${y}px,
+rgba(94,234,212,.15),
+white 70%)`;
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.background="white";
+
+});
+
+});
