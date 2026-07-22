@@ -234,3 +234,21 @@ card.style.background="white";
 });
 
 });
+
+// Progress Animation
+
+window.addEventListener("load",()=>{
+
+const progress=document.querySelector(".progress-bar");
+
+progress.style.width="0";
+
+setTimeout(()=>{
+
+progress.style.width="78%";
+
+progress.style.transition="2s";
+
+},500);
+
+});
