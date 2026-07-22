@@ -633,6 +633,7 @@
             color: var(--coral);
             font-size: 1.8rem;
         }
+        
 
         .footer-pulse .tagline {
             color: var(--medium-slate);
@@ -999,4 +1000,251 @@
         .blog-item .blog-card {
             animation: fadeUp 0.6s ease forwards;
         }
+
+
+        /* body */
+        .contact-hero{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:
+    linear-gradient(135deg,
+    var(--teal),
+    var(--mint));
+
+    color:white;
+
+}
+
+
+/* hero */
+.hero-content h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+}
+
+
+.btne{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 35px;
+
+    background:white;
+
+    color:var(--teal);
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btne:hover{
+
+    transform:translateY(-5px);
+
+    background:var(--coral);
+
+    color:white;
+
+}
+
+.contact-info{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:25px;
+
+padding:80px 10%;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:var(--shadow-hover);
+
+}
+
+form{
+
+display:grid;
+
+gap:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+input,
+textarea{
+
+padding:18px;
+
+border-radius:12px;
+
+border:1px solid var(--light-slate);
+
+font-size:16px;
+
+font-family:var(--font);
+
+}
+
+input:focus,
+textarea:focus{
+
+outline:none;
+
+border-color:var(--teal);
+
+box-shadow:0 0 15px rgba(20,184,166,.25);
+
+}
+
+iframe{
+
+width:100%;
+
+height:450px;
+
+border:none;
+
+border-radius:20px;
+
+}
+
+.card{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+.heartbeat-container{
+    position:relative;
+    display:inline-block;
+    padding:40px 0;
+}
+
+.hero-subtitle{
+    position:relative;
+    z-index:5;
+
+    color:white;
+    font-size:30px;
+    font-weight:500;
+
+    background:rgba(0,0,0,.15);
+    padding:8px 18px;
+    border-radius:8px;
+    backdrop-filter:blur(5px);
+}
+
+.heartbeat-svg{
+
+    position:absolute;
+
+    left:-250px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:1700px;
+    height:120px;
+
+    z-index:1;
+
+    overflow:visible;
+}
+
+.heartbeat-path{
+
+    fill:none;
+
+    stroke:#ffffff;
+
+    stroke-width:4;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+
+    stroke-dasharray:1800;
+
+    stroke-dashoffset:1800;
+
+    filter:drop-shadow(0 0 8px rgba(255,255,255,.8));
+}
   
