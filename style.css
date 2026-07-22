@@ -1,0 +1,436 @@
+/* About */
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#14B8A6;
+    --secondary:#5EEAD4;
+    --accent:#F97360;
+    --dark:#1E293B;
+    --light:#F8FAFC;
+
+    --shadow:0 20px 60px rgba(0,0,0,.08);
+
+    --radius:25px;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
+}
+
+/*=========================
+BACKGROUND BLOBS
+=========================*/
+
+.blob{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    z-index:-1;
+
+    animation:float 10s infinite ease-in-out;
+
+}
+
+.blob1{
+
+    width:350px;
+
+    height:350px;
+
+    background:#14B8A660;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.blob2{
+
+    width:300px;
+
+    height:300px;
+
+    background:#5EEAD450;
+
+    right:-80px;
+
+    top:150px;
+
+}
+
+.blob3{
+
+    width:350px;
+
+    height:350px;
+
+    background:#F9736030;
+
+    bottom:-120px;
+
+    left:40%;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*=========================
+HERO
+=========================*/
+
+.hero{
+
+    padding:120px 0;
+
+    position:relative;
+
+}
+
+.badge-title{
+
+    background:#14B8A620;
+
+    color:var(--primary);
+
+    padding:10px 25px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    display:inline-block;
+
+    margin-bottom:25px;
+
+    letter-spacing:1px;
+
+}
+
+.hero h1{
+
+    font-size:65px;
+
+    line-height:1.15;
+
+    font-weight:700;
+
+}
+
+.hero h1 span{
+
+    color:var(--primary);
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#475569;
+
+}
+
+/*=========================
+BUTTONS
+=========================*/
+
+.hero-btns{
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-main{
+
+    background:linear-gradient(
+
+    135deg,
+
+    var(--primary),
+
+    var(--secondary));
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.btn-main:hover{
+
+    transform:translateY(-6px);
+
+    color:white;
+
+}
+
+.btn-outline-custom{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.btn-outline-custom:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*=========================
+INFO
+=========================*/
+
+.hero-info{
+
+display:flex;
+
+gap:45px;
+
+}
+
+.hero-info h3{
+
+font-size:35px;
+
+color:var(--primary);
+
+font-weight:700;
+
+}
+
+.hero-info small{
+
+font-size:15px;
+
+color:#64748B;
+
+}
+
+/*=========================
+IMAGE
+=========================*/
+
+.hero-image{
+
+position:relative;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+max-width:540px;
+
+animation:move 5s infinite ease-in-out;
+
+}
+
+@keyframes move{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*=========================
+FLOATING CARD
+=========================*/
+
+.floating-card{
+
+position:absolute;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(20px);
+
+padding:15px 25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+font-weight:600;
+
+animation:cardFloat 4s infinite;
+
+}
+
+.card1{
+
+top:30px;
+
+left:-30px;
+
+}
+
+.card2{
+
+bottom:90px;
+
+right:-20px;
+
+}
+
+.card3{
+
+bottom:-10px;
+
+left:50px;
+
+}
+
+@keyframes cardFloat{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+/*=========================
+SECTION
+=========================*/
+
+section{
+
+padding:120px 0;
+
+}
+
+.section-subtitle{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:#14B8A615;
+
+color:var(--primary);
+
+font-weight:600;
+
+border-radius:50px;
+
+margin-bottom:20px;
+
+}
+
+.about-section h2{
+
+font-size:48px;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+.about-section p{
+
+font-size:17px;
+
+line-height:1.9;
+
+color:#64748B;
+
+margin-bottom:20px;
+
+}
