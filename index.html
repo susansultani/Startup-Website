@@ -3,77 +3,279 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet" />
-    <!-- Font Awesome 6 -->
+    <title>Pulse — Health intelligence that learns your rhythm</title>
+    <meta
+      name="description"
+      content="Pulse turns your heart rate, sleep and activity into a daily plan that adapts to you — not the other way around." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- NAVBAR -->
-
+    <!--  NAVBAR  -->
     <nav class="navbar navbar-expand-lg navbar-pulse fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <i class="fas fa-heartbeat"></i> Pulse
-        </a>
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-heartbeat"></i>Pulse</a
+        >
         <button
-          class="navbar-toggler border-0"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-          aria-controls="navMenu"
+          data-bs-target="#navMain"
+          aria-controls="navMain"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="filter: invert(0.2)"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item">
-              <a
-                class="nav-link btn btn-coral text-white px-4 py-2 ms-2"
-                href="#"
-                style="font-size: 0.85rem"
-                >Get the App</a
-              >
+              <a class="nav-link" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-coral" href="contact.html">Get started</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- STAT STRIP  -->
-    <section class="section-dark statline py-0">
+    <!--  HERO  -->
+    <header class="hero">
+      <div class="container hero-content">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <span class="eyebrow mb-3 d-inline-flex"
+              >Live health intelligence</span
+            >
+            <h1 class="mt-3 mb-4">
+              Everybody has a rhythm.<br /><em>Pulse</em> learns yours.
+            </h1>
+            <p class="lede mb-4">
+              Most health apps hand you the same plan as everyone else. Pulse
+              reads your heart rate, sleep and activity every day and rebuilds
+              your plan around what your body is actually doing — not a generic
+              target.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-5">
+              <a href="contact.html" class="btn btn-coral btn-lg"
+                >Start free — 14 days</a
+              >
+              <a
+                href="features.html"
+                class="btn btn-outline-pulse btn-lg d-inline-flex align-items-center gap-2">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path d="M8 5l11 7-11 7z" />
+                </svg>
+                See how it works
+              </a>
+            </div>
+            <p
+              class="mono text-uppercase"
+              style="
+                font-size: 0.72rem;
+                letter-spacing: 0.08em;
+                color: var(--slate-light);
+              ">
+              No credit card · Syncs with any wearable · Cancel anytime
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="dial-wrap" data-aos="fade-left">
+              <svg
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+                class="circadian-dial">
+                <!-- حلقه پس‌زمینه -->
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  fill="none"
+                  stroke="#E2E8F0"
+                  stroke-width="14"
+                  class="dial-bg" />
+
+                <!-- حلقه‌های داینامیک -->
+                <g transform="rotate(-90 100 100)" class="dial-rings">
+                  <circle
+                    cx="100"
+                    cy="100"
+                    r="80"
+                    fill="none"
+                    stroke="#94A3B8"
+                    stroke-width="14"
+                    stroke-dasharray="125.6 502.4"
+                    stroke-dashoffset="0"
+                    stroke-linecap="round"
+                    class="dial-segment segment-sleep" />
+                  <circle
+                    cx="100"
+                    cy="100"
+                    r="80"
+                    fill="none"
+                    stroke="#5EEAD4"
+                    stroke-width="14"
+                    stroke-dasharray="94.2 502.4"
+                    stroke-dashoffset="-126"
+                    stroke-linecap="round"
+                    class="dial-segment segment-rise" />
+                  <circle
+                    cx="100"
+                    cy="100"
+                    r="80"
+                    fill="none"
+                    stroke="#F97360"
+                    stroke-width="14"
+                    stroke-dasharray="94.2 502.4"
+                    stroke-dashoffset="-220"
+                    stroke-linecap="round"
+                    class="dial-segment segment-peak" />
+                  <circle
+                    cx="100"
+                    cy="100"
+                    r="80"
+                    fill="none"
+                    stroke="#14B8A6"
+                    stroke-width="14"
+                    stroke-dasharray="188.4 502.4"
+                    stroke-dashoffset="-314"
+                    stroke-linecap="round"
+                    class="dial-segment segment-winddown" />
+                </g>
+
+                <!-- هاله تنفسی -->
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  fill="none"
+                  stroke="#5EEAD4"
+                  stroke-width="2"
+                  opacity="0"
+                  class="breathing-glow" />
+              </svg>
+
+              <div class="dial-center">
+                <div class="t">Recovery, now</div>
+                <div class="n dial-value" data-target="91">0%</div>
+                <div class="t">ready to train</div>
+              </div>
+            </div>
+
+            <div class="dial-legend">
+              <span><i style="background: #94a3b8"></i>Sleep</span>
+              <span><i style="background: #5eead4"></i>Rise</span>
+              <span><i style="background: #f97360"></i>Peak</span>
+              <span><i style="background: #14b8a6"></i>Wind-down</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  RHYTHM MAP  -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="rhythm-map">
+          <div
+            class="d-flex flex-wrap justify-content-between align-items-end mb-2">
+            <div>
+              <span class="eyebrow">Today's rhythm map</span>
+              <h2 class="mt-2 mb-0" style="font-size: 1.5rem">
+                Your 24 hours, predicted before they happen.
+              </h2>
+            </div>
+            <span class="badge-pulse teal mt-3 mt-md-0"
+              >Wed · updated 6:42 AM</span
+            >
+          </div>
+          <div class="rhythm-track">
+            <div class="rhythm-pin" style="left: 27.8%">
+              <span class="lbl">Wake</span><span class="time">6:40</span>
+              <div class="dot" style="background: #5eead4"></div>
+            </div>
+            <div class="rhythm-pin" style="left: 42.7%">
+              <span class="lbl">Focus peak</span><span class="time">10:15</span>
+              <div class="dot" style="background: #f97360"></div>
+            </div>
+            <div class="rhythm-pin" style="left: 58.3%">
+              <span class="lbl">Post-lunch dip</span
+              ><span class="time">14:00</span>
+              <div class="dot" style="background: #94a3b8"></div>
+            </div>
+            <div class="rhythm-pin" style="left: 75%">
+              <span class="lbl">Best workout</span
+              ><span class="time">18:00</span>
+              <div class="dot" style="background: #14b8a6"></div>
+            </div>
+            <div class="rhythm-pin" style="left: 96.5%">
+              <span class="lbl">Sleep</span><span class="time">23:10</span>
+              <div class="dot" style="background: #1e293b"></div>
+            </div>
+          </div>
+          <div class="rhythm-hours">
+            <span>12am</span><span>3</span><span>6</span><span>9</span
+            ><span>12pm</span><span>3</span><span>6</span><span>9</span
+            ><span>12am</span>
+          </div>
+          <p class="text-muted mt-4 mb-0" style="font-size: 0.92rem">
+            Built from three weeks of your heart rate and sleep pattern — not a
+            generic circadian chart.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STAT STRIP ========== -->
+    <section class="statline py-0">
       <div class="container">
         <div class="row text-center">
           <div
-            class="col-6 col-lg-3 stat border-end border-light-subtle"
-            style="border-color: var(--line-dark) !important">
+            class="col-6 col-lg-3 stat border-end"
+            style="border-color: var(--line) !important">
             <div class="num">412K</div>
             <div class="cap">people on Pulse</div>
           </div>
           <div
-            class="col-6 col-lg-3 stat border-end border-light-subtle"
-            style="border-color: var(--line-dark) !important">
-            <div class="num text-mint">+38min</div>
+            class="col-6 col-lg-3 stat border-end"
+            style="border-color: var(--line) !important">
+            <div class="num text-teal">+38min</div>
             <div class="cap">avg. sleep gained</div>
           </div>
           <div
-            class="col-6 col-lg-3 stat border-end border-light-subtle d-none d-lg-block"
-            style="border-color: var(--line-dark) !important">
+            class="col-6 col-lg-3 stat border-end d-none d-lg-block"
+            style="border-color: var(--line) !important">
             <div class="num">2.1M</div>
             <div class="cap">data points read daily</div>
           </div>
@@ -84,8 +286,265 @@
         </div>
       </div>
     </section>
-    <!-- LUXURY FOOTER  -->
 
+    <!-- ========== FEATURES PREVIEW ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">What Pulse reads</span>
+            <h2 class="mt-3" style="font-size: 2.2rem">
+              Four signals. One plan that actually fits your day.
+            </h2>
+          </div>
+          <div class="col-lg-5 offset-lg-1 d-flex align-items-end">
+            <p class="text-muted mb-0">
+              Pulse doesn't ask how you feel — it already knows, and adjusts
+              before you have to.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card-pulse">
+              <div class="icon-tile" style="background: var(--coral-soft)">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#F97360"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M12 21s-7.5-4.6-9.3-9C1.2 8.4 2.5 5 5.8 5c2 0 3.3 1.1 4 2.1.7-1 2-2.1 4-2.1 3.3 0 4.6 3.4 3.1 7-1.8 4.4-9.2 9-9.2 9z" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.15rem">Heart rate intelligence</h3>
+              <p class="text-muted mb-0">
+                Resting rate, variability and recovery, read continuously — not
+                just at the gym.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-pulse">
+              <div class="icon-tile" style="background: var(--teal-soft)">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#0F9488"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.15rem">Sleep architecture</h3>
+              <p class="text-muted mb-0">
+                Deep, light and REM stages mapped, so you know why a night felt
+                off.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-pulse">
+              <div class="icon-tile" style="background: var(--mint-soft)">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2DD4BF"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M3 12h4l2-7 4 14 2-7h6" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.15rem">Adaptive coaching</h3>
+              <p class="text-muted mb-0">
+                Training and rest days shift automatically when your recovery
+                says to.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-pulse">
+              <div class="icon-tile">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1E293B"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path
+                    d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.15rem">Daily briefing</h3>
+              <p class="text-muted mb-0">
+                One short note each morning — what changed, and what to do about
+                it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="features.html" class="btn btn-ink">Explore all features</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <span class="eyebrow">The process</span>
+            <h2 class="mt-3 mb-4" style="font-size: 2.2rem">
+              From first sync to a plan that fits, in three steps.
+            </h2>
+            <p class="text-muted">
+              Pulse needs about a week to learn your baseline. After that, every
+              plan it gives you is built from your own data — not an average.
+            </p>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <div class="step">
+              <span class="index">01</span>
+              <div>
+                <h3 style="font-size: 1.15rem">Connect your rhythm</h3>
+                <p class="text-muted mb-0">
+                  Link any wearable or your phone's sensors. Takes under two
+                  minutes, no new hardware required.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="index">02</span>
+              <div>
+                <h3 style="font-size: 1.15rem">Pulse learns the pattern</h3>
+                <p class="text-muted mb-0">
+                  Over seven days, Pulse maps your normal — resting rate, sleep
+                  cycles, activity load — before it recommends anything.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="index">03</span>
+              <div>
+                <h3 style="font-size: 1.15rem">Adjust in real time</h3>
+                <p class="text-muted mb-0">
+                  Slept badly? Trained hard? Your plan updates that morning, not
+                  next week.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">From the field</span>
+            <h2 class="mt-3" style="font-size: 2.2rem">
+              People who stopped guessing.
+            </h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="quote-card">
+              <span class="quote-mark">"</span>
+              <p class="mb-4">
+                Pulse told me to skip a session before I could feel why. My
+                recovery score was right — I would have trained through it
+                otherwise.
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-mono">RM</div>
+                <div>
+                  <div class="fw-semibold" style="font-size: 0.9rem">
+                    Rae M.
+                  </div>
+                  <div class="text-muted mono" style="font-size: 0.75rem">
+                    Marathon runner
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="quote-card">
+              <span class="quote-mark">"</span>
+              <p class="mb-4">
+                I've tried four sleep apps. This is the first one that explained
+                why my sleep score dropped instead of just showing me the
+                number.
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-mono">DK</div>
+                <div>
+                  <div class="fw-semibold" style="font-size: 0.9rem">
+                    Dave K.
+                  </div>
+                  <div class="text-muted mono" style="font-size: 0.75rem">
+                    Product designer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="quote-card">
+              <span class="quote-mark">"</span>
+              <p class="mb-4">
+                The morning briefing is two sentences. That's exactly the amount
+                of health advice I have time to read before coffee.
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-mono">SN</div>
+                <div>
+                  <div class="fw-semibold" style="font-size: 0.9rem">
+                    Sana N.
+                  </div>
+                  <div class="text-muted mono" style="font-size: 0.75rem">
+                    Nurse, night shifts
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="cta-band on-ink">
+          <span class="eyebrow justify-content-center">Ready when you are</span>
+          <h2 class="mt-3 mb-4" style="font-size: 2.4rem; color: #fff">
+            Your first readout is free.
+          </h2>
+          <p class="text-muted mb-4 mx-auto" style="max-width: 32rem">
+            Two minutes to connect. Seven days to learn your rhythm. No card
+            required to start.
+          </p>
+          <a href="contact.html" class="btn btn-coral btn-lg"
+            >Start your free trial</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- LUXURY FOOTER  -->
     <footer class="footer-pulse">
       <div class="container">
         <div class="row g-5">
@@ -191,5 +650,64 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // CIRCADIAN DIAL - Counter Animation
+
+      function animateDialValue() {
+        const valueElement = document.querySelector(".dial-value");
+        if (!valueElement) return;
+
+        const target = parseInt(valueElement.getAttribute("data-target"));
+        let current = 0;
+        const duration = 2000; // 2 ثانیه
+        const startTime = performance.now();
+
+        function updateCounter(timestamp) {
+          const elapsed = timestamp - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          // Easing function - easeOutExpo
+          const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+
+          current = Math.floor(eased * target);
+          valueElement.textContent = current + "%";
+
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            valueElement.textContent = target + "%";
+          }
+        }
+
+        requestAnimationFrame(updateCounter);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(animateDialValue, 1500);
+      });
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const dial = entry.target.querySelector(".circadian-dial");
+                if (dial) {
+                  dial.style.animation = "none";
+                  dial.offsetHeight; // trigger reflow
+                  dial.style.animation = "";
+
+                  setTimeout(animateDialValue, 1500);
+                }
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        const dialWrap = document.querySelector(".dial-wrap");
+        if (dialWrap) observer.observe(dialWrap);
+      }
+    </script>
   </body>
 </html>

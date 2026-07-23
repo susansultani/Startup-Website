@@ -3,60 +3,492 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet" />
-    <!-- Font Awesome 6 -->
+    <title>Pulse — Health intelligence that learns your rhythm</title>
+    <meta
+      name="description"
+      content="Pulse turns your heart rate, sleep and activity into a daily plan that adapts to you — not the other way around." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- NAVBAR -->
-
+    <!--  NAVBAR  -->
     <nav class="navbar navbar-expand-lg navbar-pulse fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <i class="fas fa-heartbeat"></i> Pulse
-        </a>
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-heartbeat"></i>Pulse</a
+        >
         <button
-          class="navbar-toggler border-0"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-          aria-controls="navMenu"
+          data-bs-target="#navMain"
+          aria-controls="navMain"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="filter: invert(0.2)"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item">
-              <a
-                class="nav-link btn btn-coral text-white px-4 py-2 ms-2"
-                href="#"
-                style="font-size: 0.85rem"
-                >Get the App</a
-              >
+              <a class="nav-link active" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-coral" href="contact.html">Get started</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!--  LUXURY FOOTER  -->
+    <header class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Under the hood</span>
+        <h1 class="mt-3 mb-3" style="font-size: clamp(2.2rem, 4.5vw, 3.4rem)">
+          Four signals, read every day, turned into one plan.
+        </h1>
+        <p class="lede">
+          Pulse isn't a bigger dashboard. It's fewer numbers, chosen because
+          they change what you should do today.
+        </p>
+      </div>
+    </header>
 
+    <!-- FEATURE 1 — Heart (Coral) -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <span class="badge-pulse">Heart</span>
+            <h2 class="mt-3 mb-3" style="font-size: 2rem">
+              Heart rate intelligence
+            </h2>
+            <p class="text-muted mb-4">
+              Pulse reads resting heart rate and heart rate variability
+              continuously, not just during workouts. That constant read is what
+              lets it tell the difference between "tired" and "actually
+              under-recovered."
+            </p>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                24/7 resting rate and variability tracking
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Recovery score, updated every morning
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Alerts when your rhythm breaks pattern
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="card-mono">
+              <div class="head">
+                <span>Resting HR — 7 days</span><span>bpm</span>
+              </div>
+              <div class="p-4">
+                <svg viewBox="0 0 300 90" width="100%" height="90">
+                  <polyline
+                    points="0,50 40,55 80,40 120,48 160,30 200,38 240,25 280,32"
+                    fill="none"
+                    stroke="#F97360"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <div class="mono" style="font-size: 1.6rem">58</div>
+                    <div class="text-muted mono" style="font-size: 0.7rem">
+                      TODAY
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <div class="up mono" style="font-size: 1.6rem">−6</div>
+                    <div class="text-muted mono" style="font-size: 0.7rem">
+                      VS 7-DAY AVG
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 2 — Sleep (Teal) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="row align-items-center gy-5 flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <span class="badge-pulse teal">Sleep</span>
+            <h2 class="mt-3 mb-3" style="font-size: 2rem">
+              Sleep architecture
+            </h2>
+            <p class="text-muted mb-4">
+              A sleep score alone doesn't tell you what to fix. Pulse breaks the
+              night into deep, light and REM stages, and links each one back to
+              what happened that day.
+            </p>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Stage-by-stage sleep breakdown
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Plain-language explanation each morning
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Bedtime suggestions based on tomorrow's plan
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div
+              class="p-4 bg-white rounded-4"
+              style="border: 1px solid var(--line)">
+              <div class="mono text-muted mb-3" style="font-size: 0.75rem">
+                LAST NIGHT — 7H 42M
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <div>
+                  <div
+                    class="d-flex justify-content-between mono"
+                    style="font-size: 0.75rem">
+                    <span>Deep</span><span>1h 48m</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-between mono"
+                    style="font-size: 0.75rem">
+                    <span>REM</span><span>1h 55m</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill coral" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-between mono"
+                    style="font-size: 0.75rem">
+                    <span>Light</span><span>3h 59m</span>
+                  </div>
+                  <div class="bar-track">
+                    <div
+                      class="bar-fill"
+                      style="width: 52%; background: var(--slate-light)"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 3 — Training (Mint) -->
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <span
+              class="badge-pulse"
+              style="background: var(--mint-soft); color: #0f9488"
+              >Training</span
+            >
+            <h2 class="mt-3 mb-3" style="font-size: 2rem">Adaptive coaching</h2>
+            <p class="text-muted mb-4">
+              Your training plan isn't fixed a month in advance. It shifts the
+              morning your recovery says to — lighter after a bad night, harder
+              when your body is ready for it.
+            </p>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2DD4BF"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Daily intensity adjusted to recovery score
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2DD4BF"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Works with running, strength or mixed training
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2DD4BF"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Flags overtraining before it becomes an injury
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="card-mono">
+              <div class="head">
+                <span>This week's load</span><span>a.u.</span>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-end gap-2" style="height: 90px">
+                  <div
+                    style="
+                      width: 12%;
+                      height: 40%;
+                      background: #2dd4bf;
+                      border-radius: 4px 4px 0 0;
+                    "></div>
+                  <div
+                    style="
+                      width: 12%;
+                      height: 65%;
+                      background: #2dd4bf;
+                      border-radius: 4px 4px 0 0;
+                    "></div>
+                  <div
+                    style="
+                      width: 12%;
+                      height: 30%;
+                      background: var(--slate-light);
+                      border-radius: 4px 4px 0 0;
+                    "></div>
+                  <div
+                    style="
+                      width: 12%;
+                      height: 80%;
+                      background: #f97360;
+                      border-radius: 4px 4px 0 0;
+                    "></div>
+                  <div
+                    style="
+                      width: 12%;
+                      height: 20%;
+                      background: var(--slate-light);
+                      border-radius: 4px 4px 0 0;
+                    "></div>
+                  <div
+                    style="
+                      width: 12%;
+                      height: 55%;
+                      background: #2dd4bf;
+                      border-radius: 4px 4px 0 0;
+                    "></div>
+                  <div
+                    style="
+                      width: 12%;
+                      height: 10%;
+                      background: var(--slate-light);
+                      border-radius: 4px 4px 0 0;
+                    "></div>
+                </div>
+                <div
+                  class="d-flex justify-content-between mt-2 mono text-muted"
+                  style="font-size: 0.68rem">
+                  <span>M</span><span>T</span><span>W</span><span>T</span
+                  ><span>F</span><span>S</span><span>S</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE 4 — Briefing (Neutral / Ink) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="row align-items-center gy-5 flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <span
+              class="badge-pulse"
+              style="background: var(--paper-alt); color: var(--ink)"
+              >Briefing</span
+            >
+            <h2 class="mt-3 mb-3" style="font-size: 2rem">Daily briefing</h2>
+            <p class="text-muted mb-4">
+              One note each morning, written in plain language — what changed
+              overnight, and the one thing worth doing about it. No dashboard
+              required.
+            </p>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Delivered before you're out of bed
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Two sentences, never a wall of stats
+              </li>
+              <li class="d-flex gap-2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14B8A6"
+                  stroke-width="2">
+                  <path d="M4 12l5 5 11-11" />
+                </svg>
+                Full data still one tap away, if you want it
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div
+              class="p-4 bg-white rounded-4"
+              style="border: 1px solid var(--line)">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="mono text-muted" style="font-size: 0.75rem"
+                  >6:42 AM</span
+                >
+                <span class="badge-pulse">Briefing</span>
+              </div>
+              <p
+                class="mb-0"
+                style="
+                  font-family: 'Space Grotesk', sans-serif;
+                  font-size: 1.15rem;
+                  font-weight: 500;
+                ">
+                Recovery is at 91% — your best morning this week. Good day to
+                push the long run you moved from Tuesday.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="cta-band on-ink">
+          <span class="eyebrow justify-content-center"
+            >See it on your own data</span
+          >
+          <h2 class="mt-3 mb-4" style="font-size: 2.2rem; color: #fff">
+            Compare plans and start your trial.
+          </h2>
+          <a href="pricing.html" class="btn btn-coral btn-lg">View pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!--  LUXURY FOOTER  -->
     <footer class="footer-pulse">
       <div class="container">
         <div class="row g-5">
@@ -162,7 +594,6 @@
     </footer>
 
     <!-- SCRIPTS -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
