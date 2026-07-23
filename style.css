@@ -65,7 +65,9 @@
   --radius: 14px;
   --radius-lg: 28px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-
+  --signal: #6366f1;
+  --signal-dark: #4f46e5;
+  --signal-soft: #eef2ff;
   /* 🔥 اضافه کن: */
   --transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   --font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -3011,6 +3013,177 @@ input:checked + .slider::before {
   }
   .blog-card .card-body {
     padding: 1.2rem;
+  }
+}
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+
+.page-hero-contact {
+  background: var(--paper);
+  padding: 8.5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero-contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    46% 55% at 88% 0%,
+    var(--signal-soft),
+    transparent 62%
+  );
+  z-index: 0;
+}
+.page-hero-contact .container {
+  position: relative;
+  z-index: 2;
+}
+.page-hero-contact .lede {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  max-width: 480px;
+}
+
+/* ============================================
+   FORM STYLES
+   ============================================ */
+.form-pulse label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.form-pulse .form-control,
+.form-pulse .form-select {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--white);
+  transition: var(--transition);
+}
+.form-pulse .form-control:focus,
+.form-pulse .form-select:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.08);
+}
+.form-pulse .form-control::placeholder {
+  color: var(--slate-light);
+}
+
+/* 🔥 دکمه Signal */
+.btn-signal {
+  background: var(--coral);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.25);
+}
+.btn-signal:hover {
+  background: var(--coral-dark);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(20, 184, 166, 0.35);
+}
+
+/* ============================================
+   DIRECT LINES CARD
+   ============================================ */
+.card-mono {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 60px -34px rgba(30, 41, 59, 0.16);
+  overflow: hidden;
+}
+.card-mono .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
+.card-mono .head span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.row-mono {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.85rem 1.6rem;
+  border-bottom: 1px dashed var(--line);
+}
+.row-mono:last-of-type {
+  border-bottom: none;
+}
+.row-mono .label {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+.row-mono .value {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.row-mono .value small {
+  color: var(--slate-light);
+  font-weight: 400;
+  font-size: 0.72rem;
+}
+.up {
+  color: var(--teal-dark);
+}
+.warn {
+  color: var(--coral-dark);
+}
+
+/* ============================================
+   MAP SECTION
+   ============================================ */
+.map-section {
+  padding: 0 0 5rem;
+}
+.map-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 60px -34px rgba(30, 41, 59, 0.16);
+}
+.map-wrapper iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  display: block;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .page-hero-contact {
+    padding: 7rem 0 3rem;
+  }
+  .page-hero-contact h1 {
+    font-size: 2rem !important;
+  }
+  .map-wrapper iframe {
+    height: 300px;
   }
 }
 /* Foote Section */
