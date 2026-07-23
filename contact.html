@@ -46,6 +46,9 @@
               <a class="nav-link" href="features.html">Features</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="pricing.html">Pricing</a>
             </li>
 
@@ -63,19 +66,65 @@
       </div>
     </nav>
 
+    <!-- ========== HERO (animated ECG) ========== -->
     <header class="page-hero-contact">
+      <div class="pulse-ekg" aria-hidden="true">
+        <svg class="layer-1" viewBox="0 0 2400 100" preserveAspectRatio="none">
+          <polyline
+            points="0,50 40,50 55,50 65,20 75,80 85,10 95,50 200,50 240,50 255,50 265,20 275,80 285,10 295,50 400,50 440,50 455,50 465,20 475,80 485,10 495,50 600,50 640,50 655,50 665,20 675,80 685,10 695,50 800,50 840,50 855,50 865,20 875,80 885,10 895,50 1000,50 1040,50 1055,50 1065,20 1075,80 1085,10 1095,50 1200,50 1240,50 1255,50 1265,20 1275,80 1285,10 1295,50 1400,50 1440,50 1455,50 1465,20 1475,80 1485,10 1495,50 1600,50 1640,50 1655,50 1665,20 1675,80 1685,10 1695,50 1800,50 1840,50 1855,50 1865,20 1875,80 1885,10 1895,50 2000,50 2040,50 2055,50 2065,20 2075,80 2085,10 2095,50 2200,50 2240,50 2255,50 2265,20 2275,80 2285,10 2295,50 2400,50"
+            fill="none"
+            stroke="#F97360"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <svg class="layer-2" viewBox="0 0 2400 100" preserveAspectRatio="none">
+          <polyline
+            points="0,50 40,50 55,50 65,20 75,80 85,10 95,50 200,50 240,50 255,50 265,20 275,80 285,10 295,50 400,50 440,50 455,50 465,20 475,80 485,10 495,50 600,50 640,50 655,50 665,20 675,80 685,10 695,50 800,50 840,50 855,50 865,20 875,80 885,10 895,50 1000,50 1040,50 1055,50 1065,20 1075,80 1085,10 1095,50 1200,50 1240,50 1255,50 1265,20 1275,80 1285,10 1295,50 1400,50 1440,50 1455,50 1465,20 1475,80 1485,10 1495,50 1600,50 1640,50 1655,50 1665,20 1675,80 1685,10 1695,50 1800,50 1840,50 1855,50 1865,20 1875,80 1885,10 1895,50 2000,50 2040,50 2055,50 2065,20 2075,80 2085,10 2095,50 2200,50 2240,50 2255,50 2265,20 2275,80 2285,10 2295,50 2400,50"
+            fill="none"
+            stroke="#14B8A6"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <svg class="layer-3" viewBox="0 0 2400 100" preserveAspectRatio="none">
+          <polyline
+            points="0,50 40,50 55,50 65,20 75,80 85,10 95,50 200,50 240,50 255,50 265,20 275,80 285,10 295,50 400,50 440,50 455,50 465,20 475,80 485,10 495,50 600,50 640,50 655,50 665,20 675,80 685,10 695,50 800,50 840,50 855,50 865,20 875,80 885,10 895,50 1000,50 1040,50 1055,50 1065,20 1075,80 1085,10 1095,50 1200,50 1240,50 1255,50 1265,20 1275,80 1285,10 1295,50 1400,50 1440,50 1455,50 1465,20 1475,80 1485,10 1495,50 1600,50 1640,50 1655,50 1665,20 1675,80 1685,10 1695,50 1800,50 1840,50 1855,50 1865,20 1875,80 1885,10 1895,50 2000,50 2040,50 2055,50 2065,20 2075,80 2085,10 2095,50 2200,50 2240,50 2255,50 2265,20 2275,80 2285,10 2295,50 2400,50"
+            fill="none"
+            stroke="#5EEAD4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+
       <div class="container">
-        <span class="eyebrow">Get in touch</span>
-        <h1 class="mt-3 mb-3" style="font-size: clamp(2.2rem, 4.5vw, 3.4rem)">
-          Start your free trial, or just ask us something.
-        </h1>
-        <p class="lede">
-          Two minutes to connect a device. No card needed for the 14-day Premium
-          trial.
-        </p>
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-start gap-4">
+          <div style="max-width: 38rem">
+            <span class="eyebrow">Get in touch</span>
+            <h1
+              class="mt-3 mb-3"
+              style="font-size: clamp(2.2rem, 4.5vw, 3.4rem)">
+              Start your free trial, or just ask us something.
+            </h1>
+            <p class="lede mb-0">
+              Two minutes to connect a device. No card needed for the 14-day
+              Premium trial.
+            </p>
+          </div>
+          <div class="reply-badge d-none d-sm-flex">
+            <span class="reply-dot"></span>
+            <div>
+              <div class="reply-num">&lt;24h</div>
+              <div class="reply-lbl">avg. reply time</div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
+    <!-- ========== FORM + DIRECT LINES ========== -->
     <section class="section pt-0">
       <div class="container">
         <div class="row g-5">
@@ -83,8 +132,32 @@
             <div
               class="p-4 p-md-5 bg-white rounded-4"
               style="border: 1px solid var(--line)">
-              <h2 class="mb-4" style="font-size: 1.5rem">Send us a message</h2>
+              <h2 class="mb-2" style="font-size: 1.5rem">Send us a message</h2>
+              <p class="text-muted mb-4" style="font-size: 0.92rem">
+                Pick what this is about — it helps us route you to the right
+                person.
+              </p>
+
+              <div class="chip-row mb-4">
+                <span class="chip active" data-topic="Starting a free trial"
+                  >Free trial</span
+                >
+                <span class="chip" data-topic="Question about plans"
+                  >Billing &amp; plans</span
+                >
+                <span class="chip" data-topic="Device compatibility"
+                  >Device support</span
+                >
+                <span class="chip" data-topic="Something else"
+                  >Something else</span
+                >
+              </div>
+
               <form class="form-pulse" onsubmit="return false;">
+                <input
+                  type="hidden"
+                  id="topicValue"
+                  value="Starting a free trial" />
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label for="firstName">First name</label>
@@ -114,15 +187,6 @@
                       required />
                   </div>
                   <div class="col-12">
-                    <label for="topic">What's this about</label>
-                    <select class="form-select" id="topic">
-                      <option>Starting a free trial</option>
-                      <option>Question about plans</option>
-                      <option>Device compatibility</option>
-                      <option>Something else</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
                     <label for="message">Message</label>
                     <textarea
                       class="form-control"
@@ -141,32 +205,88 @@
               </form>
             </div>
           </div>
+
           <div class="col-lg-5">
-            <div class="card-mono h-100">
+            <div class="card-mono h-100 d-flex flex-column">
               <div class="head"><span>Direct lines</span></div>
-              <div class="row-mono">
-                <span class="label">Support</span>
-                <span class="value mono" style="font-size: 0.95rem"
-                  >support@pulse.health</span
-                >
+
+              <div class="row-mono-icon">
+                <div class="ic">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0F9488"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M4 6h16v12H4z" />
+                    <path d="M4 7l8 6 8-6" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="label">Support</div>
+                  <div class="value">support@pulse.health</div>
+                </div>
               </div>
-              <div class="row-mono">
-                <span class="label">Sales</span>
-                <span class="value mono" style="font-size: 0.95rem"
-                  >team@pulse.health</span
-                >
+              <div class="row-mono-icon">
+                <div class="ic" style="background: var(--coral-soft)">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E2543F"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M3 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L13 14l5 2v4a2 2 0 0 1-2 2C8.6 22 2 15.4 2 7a2 2 0 0 1 2-2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="label">Sales</div>
+                  <div class="value">team@pulse.health</div>
+                </div>
               </div>
-              <div class="row-mono">
-                <span class="label">Response time</span>
-                <span class="value up">under 24h</span>
+              <div class="row-mono-icon">
+                <div class="ic" style="background: var(--mint-soft)">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#2DD4BF"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3.5 2" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="label">Response time</div>
+                  <div class="value" style="color: var(--teal-dark)">
+                    under 24h
+                  </div>
+                </div>
               </div>
-              <div class="row-mono">
-                <span class="label">Office</span>
-                <span class="value" style="font-size: 0.9rem; font-weight: 500"
-                  >Berlin, Germany</span
-                >
+              <div class="row-mono-icon">
+                <div class="ic">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0F9488"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z" />
+                    <circle cx="12" cy="9.5" r="2.3" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="label">Office</div>
+                  <div class="value">Berlin, Germany</div>
+                </div>
               </div>
-              <div class="p-4">
+
+              <div class="p-4 mt-auto">
                 <p class="text-muted mb-3" style="font-size: 0.88rem">
                   Prefer to just start? Skip the form and begin your 14-day
                   Premium trial — no card required.
@@ -179,17 +299,23 @@
       </div>
     </section>
 
-    <!-- ========== MAP SECTION ========== -->
+    <!-- ========== MAP ========== -->
     <section class="map-section">
       <div class="container">
         <div class="map-wrapper">
+          <div class="map-tag">
+            <span class="dot"></span>
+            <div>
+              <div class="t1">Pulse HQ</div>
+              <div class="t2">Berlin, Germany</div>
+            </div>
+          </div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.150382269586!2d-0.128735684678932!3d38.9941179795579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61d6b5c3b4e7e1%3A0x2b2b2b2b2b2b2b2b!2sBalearic%20Islands%2C%20Spain!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.0!2d13.3888!3d52.5170!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sde!4v1620000000000!5m2!1sen!2sde"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Pulse Office Location - Balearic Islands, Spain">
-          </iframe>
+            title="Pulse Office Location - Berlin, Germany"></iframe>
         </div>
       </div>
     </section>
