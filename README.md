@@ -113,14 +113,6 @@ Typography: **Space Grotesk** (display/headings), **Inter** (body text), **IBM P
 
 ---
 
-## 👥 Team & Workflow
-
-| Name | Role | GitHub |
-|---|---|---|
-| _Member 1_ | _e.g. HTML structure / Home page_ | `@username` |
-| _Member 2_ | _e.g. CSS design system / Features page_ | `@username` |
-| _Member 3_ | _e.g. Pricing & Contact pages_ | `@username` |
-| _Member 4_ | _e.g. About & Blog pages_ | `@username` |
 
 **Branching convention used:**
 - `main` — stable, presentation-ready branch
