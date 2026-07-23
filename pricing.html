@@ -1,53 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pulse | HealthTech Startup</title>
-     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
 
-     <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-     <!-- SEO -->
-<meta name="description" content="Pulse is a smart health technology platform that helps you track wellness, monitor health data and connect with healthcare professionals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-<meta name="keywords" content="HealthTech, healthcare, wellness, AI health, medical technology">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<meta name="author" content="Pulse">
-
-<meta name="robots" content="index, follow">
-
-
-<!-- Open Graph -->
-
-<meta property="og:title" content="Pulse | Smart Healthcare">
-
-<meta property="og:description" content="Smarter health tracking with modern technology.">
-
-<meta property="og:type" content="website">
-
-
-<!-- Theme Color -->
-
-<meta name="theme-color" content="#14B8A6">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <!-- ============================================================ -->
-    <!-- NAVBAR -->
-    <!-- ============================================================ -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  NAVBAR  -->
     <nav class="navbar navbar-expand-lg navbar-pulse fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html"
@@ -91,9 +75,409 @@
       </div>
     </nav>
 
-    <!-- ============================================================ -->
+    <section class="pricing-hero">
+      <div class="hero-bg">
+        <span class="blob blob-one"></span>
+
+        <span class="blob blob-two"></span>
+
+        <div class="grid-bg"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content text-center">
+          <div class="breadcrumb">
+            <a href="#">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <span>Pricing</span>
+          </div>
+
+          <h1>
+            Simple Plans.
+            <br />
+            <span>Powerful Health.</span>
+          </h1>
+
+          <p>
+            Choose a plan that fits your wellness journey. Track your health,
+            get insights and stay connected with smarter healthcare technology.
+          </p>
+          <div class="hero-visual">
+            <div class="glass-card main-card">
+              <div class="pulse-circle">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+
+              <h4>Smart Health</h4>
+
+              <p>AI Powered Monitoring</p>
+
+              <div class="health-line">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="floating-card card-one">
+              <i class="bi bi-shield-check"></i>
+
+              <div>
+                <strong>Secure</strong>
+                <small>Health Data</small>
+              </div>
+            </div>
+
+            <div class="floating-card card-two">
+              <i class="bi bi-graph-up-arrow"></i>
+
+              <div>
+                <strong>98%</strong>
+                <small>Accuracy</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-badges">
+            <div>
+              <i class="bi bi-check-circle"></i>
+              No Hidden Fees
+            </div>
+
+            <div>
+              <i class="bi bi-shield-check"></i>
+              Secure Data
+            </div>
+
+            <div>
+              <i class="bi bi-clock"></i>
+              24/7 Support
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <div class="container">
+        <div class="pricing-title text-center">
+          <span>Pricing Plans</span>
+          <h2>Choose The Best Plan For Your Health</h2>
+          <p>
+            Flexible plans designed to help you monitor, improve and manage your
+            wellness journey.
+          </p>
+        </div>
+        <div class="pricing-toggle">
+          <span id="monthlyText" class="active"> Monthly </span>
+
+          <label class="switch">
+            <input type="checkbox" id="priceToggle" />
+
+            <span class="slider"></span>
+          </label>
+
+          <span id="yearlyText">
+            Yearly
+            <small>Save 20%</small>
+          </span>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Free Plan -->
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card">
+              <div class="plan-icon">
+                <i class="bi bi-heart"></i>
+              </div>
+
+              <h3>Free</h3>
+
+              <div class="price">
+                $<span class="amount" data-month="0" data-year="0">0</span>
+                <span>/month</span>
+              </div>
+
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Basic Health Tracking
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Daily Wellness Tips
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Limited Reports
+                </li>
+
+                <li class="disabled">
+                  <i class="bi bi-x-circle"></i>
+                  Doctor Consultation
+                </li>
+              </ul>
+
+              <a href="#" class="price-btn"> Get Started </a>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card popular">
+              <div class="popular-badge">Most Popular</div>
+
+              <div class="plan-icon">
+                <i class="bi bi-activity"></i>
+              </div>
+
+              <h3>Premium</h3>
+
+              <div class="price">
+                $<span class="amount" data-month="19" data-year="15">19</span>
+                <span>/month</span>
+              </div>
+
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Advanced Health Analytics
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Unlimited Reports
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  AI Health Assistant
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Doctor Consultation
+                </li>
+              </ul>
+
+              <a href="#" class="price-btn premium-btn"> Start Premium </a>
+            </div>
+          </div>
+
+          <!-- Family Plan -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card">
+              <div class="plan-icon">
+                <i class="bi bi-people"></i>
+              </div>
+
+              <h3>Family</h3>
+
+              <div class="price">
+                $<span class="amount" data-month="39" data-year="31">39</span>
+                <span>/month</span>
+              </div>
+
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Up To 5 Members
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Family Health Reports
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Priority Support
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  Doctor Access
+                </li>
+              </ul>
+
+              <a href="#" class="price-btn"> Choose Family </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-title text-center">
+          <span>FAQ</span>
+
+          <h2>Frequently Asked Questions</h2>
+
+          <p>Everything you need to know about Pulse plans.</p>
+        </div>
+
+        <div class="accordion" id="pulseFAQ">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqOne">
+                What is Pulse?
+              </button>
+            </h2>
+
+            <div
+              id="faqOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#pulseFAQ">
+              <div class="accordion-body">
+                Pulse is a smart health platform that helps you track your
+                wellness, analyze health data and connect with health
+                professionals.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqTwo">
+                Can I change my plan later?
+              </button>
+            </h2>
+
+            <div
+              id="faqTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#pulseFAQ">
+              <div class="accordion-body">
+                Yes. You can upgrade or downgrade your plan anytime according to
+                your health needs.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqThree">
+                Is my health data secure?
+              </button>
+            </h2>
+
+            <div
+              id="faqThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#pulseFAQ">
+              <div class="accordion-body">
+                Yes. Pulse uses secure technology to protect your personal
+                health information.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqFour">
+                Do you offer family plans?
+              </button>
+            </h2>
+
+            <div
+              id="faqFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#pulseFAQ">
+              <div class="accordion-body">
+                Yes. Our Family plan allows multiple members to manage their
+                health together.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="bi bi-people"></i>
+
+              <h3 class="counter" data-target="50000">0</h3>
+
+              <p>Active Users</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="bi bi-heart-pulse"></i>
+
+              <h3 class="counter" data-target="98">
+                0
+                <span>%</span>
+              </h3>
+
+              <p>User Satisfaction</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="bi bi-shield-check"></i>
+
+              <h3 class="counter" data-target="24">0</h3>
+
+              <p>24/7 Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <i class="bi bi-person-badge"></i>
+
+              <h3 class="counter" data-target="150">0</h3>
+
+              <p>Health Experts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h2>Ready To Take Control Of Your Health?</h2>
+
+              <p>
+                Join thousands of people using Pulse to build a healthier and
+                smarter lifestyle.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end text-center">
+              <a href="#" class="cta-btn"> Start Your Journey </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== LUXURY FOOTER ===== -->
-    <!-- ============================================================ -->
+
     <footer class="footer-pulse">
       <div class="container">
         <div class="row g-5">
@@ -198,21 +582,110 @@
       </div>
     </footer>
 
-<!-- ============================================================ -->
-<!-- SCRIPTS -->
-<!-- ============================================================ -->
- <script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-</script>
-<script src="./main.js"></script>
-<div class="loader">
+    <!-- SCRIPTS -->
 
-<div class="pulse-loader">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const toggle = document.getElementById("priceToggle");
 
-<i class="bi bi-heart-pulse"></i>
+      const amounts = document.querySelectorAll(".amount");
 
-</div>
+      const monthlyText = document.getElementById("monthlyText");
+      const yearlyText = document.getElementById("yearlyText");
 
-</div>
-</body>
+      toggle.addEventListener("change", () => {
+        amounts.forEach((price) => {
+          if (toggle.checked) {
+            price.textContent = price.dataset.year;
+          } else {
+            price.textContent = price.dataset.month;
+          }
+        });
+
+        if (toggle.checked) {
+          yearlyText.classList.add("active");
+          monthlyText.classList.remove("active");
+        } else {
+          monthlyText.classList.add("active");
+          yearlyText.classList.remove("active");
+        }
+      });
+
+      // Scroll Reveal Animations
+
+      ScrollReveal().reveal(".pricing-title", {
+        delay: 200,
+        distance: "50px",
+        origin: "top",
+        duration: 900,
+      });
+
+      ScrollReveal().reveal(".pricing-card", {
+        interval: 150,
+        delay: 200,
+        distance: "60px",
+        origin: "bottom",
+        duration: 1000,
+      });
+
+      ScrollReveal().reveal(".faq-title, .accordion", {
+        delay: 200,
+        distance: "50px",
+        origin: "bottom",
+        duration: 900,
+      });
+
+      ScrollReveal().reveal(".cta-box", {
+        delay: 200,
+        distance: "70px",
+        origin: "left",
+        duration: 1000,
+      });
+
+      ScrollReveal().reveal(".pulse-footer", {
+        delay: 200,
+        distance: "50px",
+        origin: "bottom",
+        duration: 900,
+      });
+
+      const counters = document.querySelectorAll(".counter");
+
+      let started = false;
+
+      window.addEventListener("scroll", () => {
+        const stats = document.querySelector(".stats-section");
+
+        if (!stats) return;
+
+        const position = stats.getBoundingClientRect().top;
+
+        if (position < window.innerHeight - 100 && !started) {
+          counters.forEach((counter) => {
+            let target = +counter.dataset.target;
+
+            let count = 0;
+
+            let update = setInterval(() => {
+              count += Math.ceil(target / 100);
+
+              if (count >= target) {
+                count = target;
+                clearInterval(update);
+              }
+
+              counter.innerHTML = count.toLocaleString();
+            }, 20);
+          });
+
+          started = true;
+        }
+      });
+
+      window.addEventListener("load", () => {
+        document.querySelector(".loader").classList.add("hide");
+      });
+    </script>
+  </body>
 </html>
