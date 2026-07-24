@@ -75,6 +75,10 @@
 * {
   box-sizing: border-box;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -4905,4 +4909,24 @@ RESPONSIVE
 }
 .blog-item .blog-card {
   animation: fadeUp 0.6s ease forwards;
+}
+.hero, .page-hero, header {
+    padding-top: 120px !important; 
+}
+
+
+@media (max-width: 576px) {
+    .hero .d-flex.flex-column {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+  
+    .hero .btn {
+        padding: 0.85rem 1.5rem !important;
+        font-size: 1rem !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
 }
