@@ -4930,3 +4930,36 @@ RESPONSIVE
         justify-content: center;
     }
 }
+.input-group-responsive {
+    display: flex;
+    width: 100%;
+}
+
+
+@media (min-width: 576px) {
+    .input-group-responsive {
+        flex-direction: row;
+    }
+    .input-group-responsive .form-control {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .input-group-responsive .btn {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        white-space: nowrap;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .input-group-responsive {
+        flex-direction: column;
+        gap: 8px; 
+    }
+    .input-group-responsive .form-control,
+    .input-group-responsive .btn {
+        width: 100% !important;
+        border-radius: 8px !important; 
+    }
+}
